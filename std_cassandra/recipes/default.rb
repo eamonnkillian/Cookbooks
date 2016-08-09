@@ -45,7 +45,7 @@ user 'cassandra' do
    comment 'Cassandra User'
    home '/home/cassandra'
    shell '/bin/bash'
-   password '$1$xyz$ykpgxxk0MaehP30BITTSP/'
+   password '<make a password with openssh>'
    group 'cassandra'
 end
 
