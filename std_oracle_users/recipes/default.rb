@@ -34,7 +34,7 @@ user 'oracle' do
    comment 'Oracle User'
    home '/home/oracle'
    shell '/bin/bash'
-   password '$1$xyz$ykpgxxk0MaehP30BITTSP/'
+   password '<create password using openssh>'
    group 'dba'
 end
 
