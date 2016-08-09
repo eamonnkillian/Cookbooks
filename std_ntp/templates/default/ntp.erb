@@ -1,0 +1,18 @@
+# 
+# Created by: EJK
+# Created: 1st August 2016
+#
+
+logfile /var/log/ntp.log
+server  127.127.1.0     # local clock
+fudge   127.127.1.0 stratum 10
+server time.service.softlayer.com
+#
+# If you want to use the Internet services for Europe uncomment these
+#
+#server 0.europe.pool.ntp.org
+#server 1.europe.pool.ntp.org
+#server 2.europe.pool.ntp.org
+#server 3.europe.pool.ntp.org
+driftfile /etc/ntp/drift
+broadcastdelay  0.008
