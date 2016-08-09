@@ -41,7 +41,7 @@ user 'nagios' do
    comment 'Nagios User'
    home '/home/nagios'
    shell '/bin/bash'
-   password '$1$xyz$wnGFhH4fm9RvrSeaDu1u80'
+   password '<create password with openssh>'
    group 'nagcmd'
 end
 
