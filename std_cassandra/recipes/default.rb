@@ -35,7 +35,7 @@
 # 3) std_yum;
 # 4) std_admins;
 # 5) std_java;
-# 6) 
+# 
 
 group 'cassandra' do
    action :create
