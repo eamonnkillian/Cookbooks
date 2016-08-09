@@ -1,0 +1,12 @@
+#
+# Created by: EJK
+# Created: 1st August 2016
+#
+
+[sshd]
+enabled = true
+filter = sshd
+action = iptables[name=SSH, port=ssh, protocol=tcp]
+logpath = /var/log/secure
+bantime = 3600
+maxretry = 3
