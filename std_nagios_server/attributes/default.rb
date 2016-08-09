@@ -1,4 +1,4 @@
-default['pkg_server'] = "http://10.164.91.13/files/NAGIOS/"
+default['pkg_server'] = "http://<your servers IP>/files/NAGIOS/"
 default['nagios_pkg'] = "nagios-4.1.1.tar.gz"
 default['plugins_pkg'] = "nagios-plugins-2.1.1.tar.gz"
 default['pkg_dir'] = "nagios-4.1.1"
