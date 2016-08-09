@@ -27,7 +27,7 @@
 # within the SoftLayer Cloud.
 #
 
-pkg_server = "http://10.164.91.13/files/JAVA/"
+pkg_server = "http://<your servers IP>/files/JAVA/"
 pkg = "jdk-8u101-linux-x64.rpm"
 
 bash "get java" do
