@@ -1,0 +1,45 @@
+#!/bin/bash
+#
+#	/etc/rc.d/init.d/<servicename>
+#
+#	<description of the *service*>
+#	<any general comments about this init script>
+#
+# <tags -- see below for tag definitions.  *Every line* from the top
+#  of the file to the end of the tags section must begin with a #
+#  character.  After the tags section, there should be a blank line.
+#  This keeps normal comments in the rest of the file from being
+#  mistaken for tags, should they happen to fit the pattern.>
+
+# Source function library.
+. /etc/init.d/functions
+
+
+start() {
+        echo -n "Starting tomcat ..."
+        /usr/local/tomcat7/bin/startup.sh
+}	
+
+stop() {
+        echo -n "Stopping tomcat ..."
+        /usr/local/tomcat7/bin/shutdown.sh
+}
+
+case "$1" in
+    start)
+        start
+	;;
+    stop)
+        stop
+	;;
+    restart)
+    	stop
+	start
+	;;
+    *)
+	echo "Usage: <servicename> {start|stop|restart}"
+	exit 1
+	;;
+esac
+exit $?
+
