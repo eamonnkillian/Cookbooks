@@ -51,7 +51,7 @@ bash 'add wp database' do
    not_if "ls /root/.wp_install_has_run"
 end
 
-pkg_server = "http://10.164.91.13/files/WORDPRESS/"
+pkg_server = "http://<your servers IP>/files/WORDPRESS/"
 pkg = "latest.tar.gz"
 
 bash 'get wordpress' do
