@@ -1,4 +1,4 @@
-default['pkg_server'] = "http://10.164.91.13/files/PYTHON/"
+default['pkg_server'] = "http://<your servers IP>/files/PYTHON/"
 default['python_pkg'] = "Python-3.3.3.tar.xz"
 default['python_tarball'] = "Python-3.3.3.tar"
 default['python_setup'] = "setuptools-25.1.2.tar.gz"
